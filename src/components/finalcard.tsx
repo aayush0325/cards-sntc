@@ -13,6 +13,7 @@ import { useClerk } from '@clerk/clerk-react'
 import { toPng } from 'html-to-image'
 import { saveAs } from 'file-saver'
 import { useNavigate } from 'react-router-dom'
+import { FaHome } from 'react-icons/fa'
 
 interface SNTCComponentProps {
   username?: string
@@ -187,19 +188,19 @@ const SNTCComponent: React.FC<SNTCComponentProps> = ({
         </p>
       </div>
       <div className='flex justify-center mt-1'>
+      <button
+          ref={homeButtonRef}
+          onClick={() => navigate('/')}
+          className='bg-gradient-to-r mx-2 mt-2 from-pink-300 via-pink-200 to-orange-300 rounded-full p-3 shadow-lg hover:scale-110 transition-transform duration-300 ease-in-out hover:shadow-xl active:bg-white flex items-center justify-center w-15 h-15'
+        >
+          <FaHome size={20} />
+        </button>
         <button
           ref={downloadButtonRef}
           onClick={handleDownload}
           className='bg-gradient-to-r mx-2 mt-2 from-pink-300 via-pink-200 to-orange-300 rounded-full p-3 shadow-lg hover:scale-110 transition-transform duration-300 ease-in-out hover:shadow-xl active:bg-white flex items-center justify-center w-15 h-15'
         >
           Download Card
-        </button>
-        <button
-          ref={homeButtonRef}
-          onClick={() => navigate('/')}
-          className='bg-gradient-to-r mx-2 mt-2 from-pink-300 via-pink-200 to-orange-300 rounded-full p-3 shadow-lg hover:scale-110 transition-transform duration-300 ease-in-out hover:shadow-xl active:bg-white flex items-center justify-center w-15 h-15'
-        >
-          Back to Home
         </button>
       </div>
     </div>
