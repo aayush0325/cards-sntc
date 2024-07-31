@@ -39,6 +39,27 @@ export default function LoadingPage() {
         return null
     }
 
+    function sendSignupRequest() {
+        const sessionCookie = getCookie('__session') // Get session cookie
+        if (!sessionCookie) {
+          console.error('Session cookie is null')
+          return
+        }
+        fetch(
+          'https://sntc-induction-server.cynikal.workers.dev/api/v1/users/signup',
+          {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              Authorization: `Bearer ${sessionCookie}`,
+            },
+          }
+        )
+          .then((response) => response.json())
+          .then((data) => console.log('Success:', data))
+          .catch((error) => console.error('Error:', error))
+      }
+
     function sendRequest() {
         const sessionCookie = getCookie('__session') // Get session cookie
         if (!sessionCookie) {
@@ -70,6 +91,7 @@ export default function LoadingPage() {
     }
 
     useEffect(() => {
+        sendSignupRequest()
         sendRequest()
     }, [])
 
