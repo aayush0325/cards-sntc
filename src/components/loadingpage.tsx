@@ -18,7 +18,7 @@ export default function LoadingPage() {
         club = 'bizClub';
     } else if (path === '/$2y$10$KLioYumGhY2jKZsejeJDOOaSDEk83UXLFQUKRQW8ezGi0nDDahLqC') {
         club = 'csi';
-    } else if (path === '/$2y$10$.SDpoZbCR/Xpf09Ao9SXBeMDDeZySjrSFI0uzFOyrU5ZM8H/pCmT.') {
+    } else if (path === '/$2y$10$.SDpoZbCR/Xpf09Ao9SXBeMDDeZySjrSFI0uzFOyrU5ZM8H/pCmT') {
         club = 'SAE';
     } else if (path === '/$2y$10$x7BEPL8CiA0BUcu/Fy8bWeIWb9p/IPr68fH2b7rhEqMJIYgHkPSc6') {
         club = 'AMC';
