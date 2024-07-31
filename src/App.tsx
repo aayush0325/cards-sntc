@@ -9,6 +9,7 @@ import csi from './assets/csi.svg'
 import bizclub from './assets/bizclub.svg'
 import astro from './assets/astro.svg'
 import sae from './assets/sae.svg'
+import sntc from './assets/sntc.svg'
 import { FaUndo } from 'react-icons/fa'
 import './index.css'
 import { UserButton } from '@clerk/clerk-react'
@@ -133,13 +134,25 @@ const db: Club[] = [
     instaLink:
       'https://www.instagram.com/cops.iitbhu?igsh=MXRvdjBpMWRkdmRkeA==',
   },
+  {
+    mainImage: sntc,
+    clubName: 'Science and Technology Council',
+    content:
+      'SNTC at IIT BHU fosters student innovation, encouraging practical application of science and technology. It’s a vibrant hub driving discovery and advancement within the community.',
+    color: 'lightPurple',
+    whatsappLink: 'https://chat.whatsapp.com/LxuOvG1ULncEeraZuovDej',
+    linkedinLink:
+      'https://www.linkedin.com/company/science-and-technology-council-iit-bhu-varanasi/',
+    instaLink:
+      'https://www.instagram.com/sntc.iitbhu?igsh=MWVtY2t1Y3hoZzdyaA==',
+  },
 ]
 
 function App() {
   const [currentIndex, setCurrentIndex] = useState<number>(db.length - 1)
   const currentIndexRef = useRef<number>(currentIndex)
 
-  const navigate = useNavigate();
+  const navigate = useNavigate()
   const childRefs: RefObject<TinderCardAPI>[] = useMemo(
     () =>
       Array(db.length)
@@ -264,7 +277,7 @@ function App() {
               <FaUndo size={20} />
             </button>
             <button
-              onClick={() => navigate("/final")}
+              onClick={() => navigate('/final')}
               className='bg-gradient-to-r mx-2 mt-2 from-pink-300 via-pink-200 to-orange-300 rounded-full p-3 shadow-lg hover:scale-110 transition-transform duration-300 ease-in-out hover:shadow-xl active:bg-white flex items-center justify-center w-15 h-15'
             >
               Check Progress..
