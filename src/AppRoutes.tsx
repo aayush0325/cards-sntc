@@ -22,7 +22,7 @@ function AppRoutes() {
           <Route path='/*' element={<Navigate to='/' />} />
           <Route path='/final' element={<Card />} />
           <Route path='/user-profile' element={<UserProfile />} />
-          <Route path='/COPS23' element={<LoadingPage />} />
+          <Route path='/COPS23sntc' element={<LoadingPage />} />
           <Route path='/tqcsntc11' element={<LoadingPage />} />
           <Route path='/sntc55biz' element={<LoadingPage />} />
           <Route path='/csi999sntc0' element={<LoadingPage />} />
