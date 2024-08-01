@@ -10,21 +10,21 @@ export default function LoadingPage() {
     const path = location.pathname;
     let club = "";
 
-    if (path === '/$2y$10$Nm1iVYZpAQT9qXlSe2cEiOA4KToMAmRFkX4XksvYrs.IvYpqeOrra') {
+    if (path === '/COPS23sntc') {
         club = 'COPS';
-    } else if (path === '/$2y$10$JHStxLISdZy1jdWJGO.ajeNv3Le6MmNz/oiOY5IcnAWN2UT7Q74Re') {
+    } else if (path === '/tqcsntc11') {
         club = 'theQuantClub';
-    } else if (path === '/$2y$10$kJ5FxDIFuOHZJ5IT./p8h.wgZc7i6yZ9VDuzc6uFctqig9d5G.Yde') {
+    } else if (path === '/sntc55biz') {
         club = 'bizClub';
-    } else if (path === '/$2y$10$KLioYumGhY2jKZsejeJDOOaSDEk83UXLFQUKRQW8ezGi0nDDahLqC') {
+    } else if (path === '/csi999sntc0') {
         club = 'csi';
-    } else if (path === '/$2y$10$.SDpoZbCR/Xpf09Ao9SXBeMDDeZySjrSFI0uzFOyrU5ZM8H/pCmT') {
+    } else if (path === '/sae100sntc001') {
         club = 'SAE';
-    } else if (path === '/$2y$10$x7BEPL8CiA0BUcu/Fy8bWeIWb9p/IPr68fH2b7rhEqMJIYgHkPSc6') {
+    } else if (path === '/sntcAMC') {
         club = 'AMC';
-    } else if (path === '/$2y$10$WextKBTIprT2Ee7wWOkgduYeZX4EhBjA7TNiSiVPblvMKK3tjWZSC') {
+    } else if (path === '/ROBOsntc77') {
         club = 'robotics';
-    } else if (path === '/$2y$10$Eq/zi3VqBditD8d/JUEqyeAvHPCguLeKh1o.3DUKiyQ3OdSwDwNze') {
+    } else if (path === '/astro69sntc') {
         club = 'astroClub';
     }
     
